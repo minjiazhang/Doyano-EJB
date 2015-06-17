@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:h="http://java.sun.com/jsf/html"
+    xmlns:f="http://java.sun.com/jsf/core">
+
+<ui:composition template="/WEB-INF/templates/BasicTemplate.xhtml">
+    <ui:define name="content">
+    
+      <h:form>
+            <h:panelGrid columns="2">
+                <h:outputText value="Topic"></h:outputText>
+                <h:inputText value="#{welcomeBean.title}"></h:inputText>
+                
+                <h:outputText value="Category"></h:outputText>
+				<h:selectOneMenu value="#{welcomeBean.category}">
+   				<f:selectItem itemValue="Computer Science" itemLabel="Computer Science" />
+   				<f:selectItem itemValue="Psychology" itemLabel="Psychology" />
+   				<f:selectItem itemValue="Physics" itemLabel="Physics" />
+   				
+				</h:selectOneMenu>
+				
+            </h:panelGrid>
+            
+            <h:commandButton value="Search" action="#{welcomeBean.search}"></h:commandButton>
+            <h:commandButton value="Add Post" action="add"></h:commandButton>
+            
+            <h:commandButton value="Logout" action="logout"></h:commandButton>
+            <h:commandButton value="View Profile" action="#{welcomeBean.profile}"></h:commandButton> <!-- TODO: Can add rank and personal profile info here -->           
+       
+        </h:form>
+        
+        
+    </ui:define>
+</ui:composition>
+</html>

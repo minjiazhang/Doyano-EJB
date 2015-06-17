@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf13834980312420" configfile="/Doyano/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="login.xhtml" x="1202" y="2831" id="pf13835078385521" referenceLink="//@navigationRule.60/@navigationCase.0/@toViewId|" outlinks="pf13835078385522 pf13835078385524 pf13835078385525 pf13842345669352" inlinks="pf13835078385526 pf13835078385528 pf13835078385529 pf138353436663780" path="/login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="welcome.xhtml" x="1418" y="1253" id="pf138350783855210" referenceLink="//@navigationRule.26/@navigationCase.0/@toViewId|" outlinks="pf138350783855212 pf138350783855213 pf138350783855214 pf13842345669353 pf13842862692600" inlinks="pf13835078385522 pf138350783855215 pf138350783855217 pf138350783855218 pf13842737995915 pf13842738222846 pf13842862692601 pf13843096869178" path="/welcome.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="welcomeemployer.xhtml" x="122" y="461" id="pf138350783855219" referenceLink="//@navigationRule.44/@navigationCase.0/@toViewId|" path="/welcomeemployer.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="loginfail.xhtml" x="1418" y="2831" id="pf138350783855328" referenceLink="//@navigationRule.3/@fromViewId|" outlinks="pf13835078385526" inlinks="pf13835078385524" path="/loginfail.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="jobresults.xhtml" x="122" y="1129" id="pf138350783855329" referenceLink="//@navigationRule.29/@fromViewId|" path="/jobresults.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="noresults.xhtml" x="1202" y="1919" id="pf138350783855332" referenceLink="//@navigationRule.22/@navigationCase.0/@toViewId|" outlinks="pf138350783855215" inlinks="pf138350783855212 pf138428629954712" path="/noresults.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="addjob.xhtml" x="122" y="2241" id="pf138350783855333" referenceLink="//@navigationRule.7/@navigationCase.0/@toViewId|" path="/addjob.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="exit.xhtml" x="986" y="1616" id="pf138350783855335" referenceLink="//@navigationRule.60/@fromViewId|" outlinks="pf138353436663780" inlinks="pf138350783855338 pf138350783855214 pf138350783855339 pf138350783855340 pf138350783855341 pf13842345669356 pf13842862692612 pf13842862692613 pf13843095405590" path="/exit.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="register.xhtml" x="770" y="3054" id="pf138350783855342" referenceLink="//@navigationRule.42/@navigationCase.0/@toViewId|" outlinks="pf138350783855343 pf13835078385528 pf138350783855344 pf138350783855345" inlinks="pf13835078385525 pf138350783855346 pf138350783855347" path="/register.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="profile.xhtml" x="554" y="401" id="pf138350783855348" referenceLink="//@navigationRule.50/@fromViewId|" outlinks="pf138350783855218 pf138350783855339 pf138350783855349 pf138350783855350 pf138350783855351" inlinks="pf138350783855213 pf138350783855352 pf138350783855353" path="/profile.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="profileemployer.xhtml" x="770" y="2042" id="pf138350783855354" referenceLink="//@navigationRule.58/@navigationCase.0/@toViewId|" outlinks="pf138350783855340 pf138350783855355 pf138350783855356 pf138350783855357 pf13842345669367" inlinks="pf138350783855358 pf138350783855359 pf138350783855360 pf13842345669368" path="/profileemployer.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="findcandidates.xhtml" x="770" y="1574" id="pf138350783855361" referenceLink="//@navigationRule.16/@navigationCase.0/@toViewId|" outlinks="pf138350783855362 pf138350783855363 pf13842345669369" inlinks="pf138350783855364 pf138350783855365 pf138423456693610" path="/findcandidates.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="candidateresults.xhtml" x="554" y="1211" id="pf138350783855366" referenceLink="//@navigationRule.16/@fromViewId|" outlinks="pf138350783855365" inlinks="pf138350783855362" path="/candidateresults.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="nocandidatesfound.xhtml" x="554" y="1595" id="pf138350783855367" referenceLink="//@navigationRule.15/@fromViewId|" outlinks="pf138350783855364" inlinks="pf138350783855363" path="/nocandidatesfound.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="jobadded.xhtml" x="122" y="2686" id="pf138350783855368" referenceLink="//@navigationRule.18/@fromViewId|" path="/jobadded.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="applied.xhtml" x="122" y="3132" id="pf138350783855369" referenceLink="//@navigationRule.30/@fromViewId|" path="/applied.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="appliedcheck.xhtml" x="770" y="1030" id="pf138350783855371" referenceLink="//@navigationRule.50/@navigationCase.0/@toViewId|" outlinks="pf138350783855338 pf138350783855217" inlinks="pf138350783855351 pf13842862692614" path="/appliedcheck.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="registered.xhtml" x="986" y="2831" id="pf138350783855372" referenceLink="//@navigationRule.43/@fromViewId|" outlinks="pf13835078385529" inlinks="pf138350783855343" path="/registered.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="registerfail.xhtml" x="986" y="3257" id="pf138350783855373" referenceLink="//@navigationRule.42/@fromViewId|" outlinks="pf138350783855347" inlinks="pf138350783855344" path="/registerfail.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="test.xhtml" x="986" y="3641" id="pf138350783855474" referenceLink="//@navigationRule.41/@fromViewId|" outlinks="pf138350783855346" inlinks="pf138350783855345" path="/test.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="profileupdated.xhtml" x="770" y="178" id="pf138350783855475" referenceLink="//@navigationRule.49/@fromViewId|" outlinks="pf138350783855353" inlinks="pf138350783855349" path="/profileupdated.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="profileupdatefail.xhtml" x="770" y="604" id="pf138350783855476" referenceLink="//@navigationRule.48/@fromViewId|" outlinks="pf138350783855352" inlinks="pf138350783855350" path="/profileupdatefail.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="jobsaddedcheck.xhtml" x="554" y="2384" id="pf138350783855477" referenceLink="//@navigationRule.59/@fromViewId|" outlinks="pf138350783855360 pf138350783855341" inlinks="pf138350783855355" path="/jobsaddedcheck.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="employerprofileupdated.xhtml" x="986" y="2000" id="pf138350783855478" referenceLink="//@navigationRule.57/@fromViewId|" outlinks="pf138350783855359" inlinks="pf138350783855356" path="/employerprofileupdated.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="employerprofileupdatefail.xhtml" x="986" y="2384" id="pf138350783855479" referenceLink="//@navigationRule.56/@fromViewId|" outlinks="pf138350783855358" inlinks="pf138350783855357" path="/employerprofileupdatefail.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="welcomAdmin.xhtml" x="122" y="3578" id="pf13842326298791" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" path="/welcomAdmin.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="welcomeemployer.xhtml" x="554" y="2000" id="pf138423456693612" referenceLink="//@navigationRule.51/@navigationCase.0/@toViewId|" outlinks="pf13842345669368 pf138423456693610 pf13842345669356 pf13842737847150" inlinks="pf13842345669352 pf13842345669369 pf13842345669367" path="/welcomeAdmin.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="addjob.xhtml" x="986" y="1232" id="pf138423456693613" referenceLink="//@navigationRule.18/@fromViewId|" outlinks="pf13842737847153 pf13842738222846" inlinks="pf13842345669353 pf13842737847150" path="/addPost.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="postadded.xhtml" x="1202" y="1051" id="pf13842737847154" referenceLink="//@navigationRule.30/@navigationCase.0/@toViewId|" outlinks="pf13842737995915" inlinks="pf13842737847153 pf13842862692615" path="/postadded.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="postresults.xhtml" x="338" y="2586" id="pf13842862692616" referenceLink="//@navigationRule.21/@fromViewId|" outlinks="pf13842862692601 pf13842862692613 pf138428629954712 pf13843095405601" inlinks="pf13842862692600" path="/postresults.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="answerSubmitted.xhtml" x="554" y="827" id="pf13842862692619" referenceLink="//@navigationRule.36/@fromViewId|" outlinks="pf13842862692612 pf13842862692615 pf13842862692614" path="/answerSubmitted.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="answerResults.xhtml" x="122" y="1797" id="pf13843095405603" referenceLink="//@navigationRule.24/@fromViewId|" outlinks="pf13843095405605 pf13843095405590 pf13843096869178 pf13843119949089" inlinks="pf13843095405606 pf13843095405601" path="/answerResults.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="emptyInput.xhtml" x="338" y="1595" id="pf13843095405607" referenceLink="//@navigationRule.28/@fromViewId|" outlinks="pf13843095405606" inlinks="pf13843095405605" path="/emptyInput.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="answerAdded.xhtml" id="pf138431199490810" referenceLink="//@navigationRule.24/@navigationCase.0/@toViewId|" inlinks="pf13843119949089" path="/answerAdded.xhtml"/>
+  <links id="pf13835078385522" target="pf138350783855210" source="pf13835078385521" outcome="User"/>
+  <links id="pf13835078385524" target="pf138350783855328" source="pf13835078385521" outcome="false"/>
+  <links id="pf13835078385526" target="pf13835078385521" source="pf138350783855328" outcome="back"/>
+  <links id="pf138350783855212" target="pf138350783855332" source="pf138350783855210" outcome="false"/>
+  <links id="pf13835078385525" target="pf138350783855342" source="pf13835078385521" outcome="register"/>
+  <links id="pf138350783855213" target="pf138350783855348" source="pf138350783855210" outcome="profile"/>
+  <links id="pf138350783855362" target="pf138350783855366" source="pf138350783855361" outcome="found"/>
+  <links id="pf138350783855363" target="pf138350783855367" source="pf138350783855361" outcome="false"/>
+  <links id="pf138350783855364" target="pf138350783855361" source="pf138350783855367" outcome="back"/>
+  <links id="pf138350783855365" target="pf138350783855361" source="pf138350783855366" outcome="back"/>
+  <links id="pf138350783855215" target="pf138350783855210" source="pf138350783855332" outcome="back"/>
+  <links id="pf138350783855338" target="pf138350783855335" source="pf138350783855371" outcome="logout"/>
+  <links id="pf138350783855217" target="pf138350783855210" source="pf138350783855371" outcome="back"/>
+  <links id="pf138350783855214" target="pf138350783855335" source="pf138350783855210" outcome="logout"/>
+  <links id="pf138350783855343" target="pf138350783855372" source="pf138350783855342" outcome="true"/>
+  <links id="pf13835078385528" target="pf13835078385521" source="pf138350783855342" outcome="login"/>
+  <links id="pf138350783855344" target="pf138350783855373" source="pf138350783855342" outcome="Exists"/>
+  <links id="pf138350783855345" target="pf138350783855474" source="pf138350783855342" outcome="test"/>
+  <links id="pf138350783855346" target="pf138350783855342" source="pf138350783855474" outcome="back"/>
+  <links id="pf138350783855347" target="pf138350783855342" source="pf138350783855373" outcome="back"/>
+  <links id="pf13835078385529" target="pf13835078385521" source="pf138350783855372" outcome="login"/>
+  <links id="pf138350783855218" target="pf138350783855210" source="pf138350783855348" outcome="back"/>
+  <links id="pf138350783855339" target="pf138350783855335" source="pf138350783855348" outcome="logout"/>
+  <links id="pf138350783855349" target="pf138350783855475" source="pf138350783855348" outcome="update"/>
+  <links id="pf138350783855350" target="pf138350783855476" source="pf138350783855348" outcome="fail"/>
+  <links id="pf138350783855352" target="pf138350783855348" source="pf138350783855476" outcome="back"/>
+  <links id="pf138350783855353" target="pf138350783855348" source="pf138350783855475" outcome="back"/>
+  <links id="pf138350783855351" target="pf138350783855371" source="pf138350783855348" outcome="true"/>
+  <links id="pf138350783855340" target="pf138350783855335" source="pf138350783855354" outcome="logout"/>
+  <links id="pf138350783855355" target="pf138350783855477" source="pf138350783855354" outcome="true"/>
+  <links id="pf138350783855356" target="pf138350783855478" source="pf138350783855354" outcome="update"/>
+  <links id="pf138350783855357" target="pf138350783855479" source="pf138350783855354" outcome="fail"/>
+  <links id="pf138350783855358" target="pf138350783855354" source="pf138350783855479" outcome="back"/>
+  <links id="pf138350783855359" target="pf138350783855354" source="pf138350783855478" outcome="back"/>
+  <links id="pf138350783855360" target="pf138350783855354" source="pf138350783855477" outcome="back"/>
+  <links id="pf138350783855341" target="pf138350783855335" source="pf138350783855477" outcome="logout"/>
+  <links id="pf138353436663780" target="pf13835078385521" source="pf138350783855335" outcome="login"/>
+  <links id="pf13842345669352" target="pf138423456693612" source="pf13835078385521" outcome="Admin"/>
+  <links id="pf13842345669368" target="pf138350783855354" source="pf138423456693612" outcome="profile"/>
+  <links id="pf138423456693610" target="pf138350783855361" source="pf138423456693612" outcome="find"/>
+  <links id="pf13842345669369" target="pf138423456693612" source="pf138350783855361" outcome="back"/>
+  <links id="pf13842345669356" target="pf138350783855335" source="pf138423456693612" outcome="logout"/>
+  <links id="pf13842345669367" target="pf138423456693612" source="pf138350783855354" outcome="back"/>
+  <links id="pf13842345669353" target="pf138423456693613" source="pf138350783855210" outcome="add"/>
+  <links id="pf13842737847150" target="pf138423456693613" source="pf138423456693612" outcome="add"/>
+  <links id="pf13842737847153" target="pf13842737847154" source="pf138423456693613" outcome="true"/>
+  <links id="pf13842737995915" target="pf138350783855210" source="pf13842737847154" outcome="back"/>
+  <links id="pf13842738222846" target="pf138350783855210" source="pf138423456693613" outcome="back"/>
+  <links id="pf13842862692600" target="pf13842862692616" source="pf138350783855210" outcome="true"/>
+  <links id="pf13842862692601" target="pf138350783855210" source="pf13842862692616" outcome="back"/>
+  <links id="pf13842862692612" target="pf138350783855335" source="pf13842862692619" outcome="logout"/>
+  <links id="pf13842862692615" target="pf13842737847154" source="pf13842862692619" outcome="back"/>
+  <links id="pf13842862692613" target="pf138350783855335" source="pf13842862692616" outcome="logout"/>
+  <links id="pf13842862692614" target="pf138350783855371" source="pf13842862692619" outcome="true"/>
+  <links id="pf138428629954712" target="pf138350783855332" source="pf13842862692616" outcome="false"/>
+  <links id="pf13843095405605" target="pf13843095405607" source="pf13843095405603" outcome="false"/>
+  <links id="pf13843095405590" target="pf138350783855335" source="pf13843095405603" outcome="logout"/>
+  <links id="pf13843095405606" target="pf13843095405603" source="pf13843095405607" outcome="back"/>
+  <links id="pf13843095405601" target="pf13843095405603" source="pf13842862692616" outcome="true"/>
+  <links id="pf13843096869178" target="pf138350783855210" source="pf13843095405603" outcome="back"/>
+  <links id="pf13843119949089" target="pf138431199490810" source="pf13843095405603" outcome="true"/>
+</pageflow:Pageflow>
