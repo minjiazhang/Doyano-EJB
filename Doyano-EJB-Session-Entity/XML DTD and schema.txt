@@ -1,0 +1,172 @@
+
+XML DTD:
+
+
+<?xml version="1.0"?>
+
+<!DOCTYPE USERS SYSTEM "USERS.dtd">
+
+
+<USERS>
+
+  <USER>
+
+    <user_id> 0 </user_id>
+
+    <user_name>Blake Offord</user_name>
+
+    <password>123456</password>
+
+    <person_rank>5</person_rank>
+
+    <follow_users_list>
+
+      <user_id> 2 </user_id>
+
+      <user_id> 10 </user_id>
+
+    </follow_users_list>
+
+    <followers_list>
+
+      <user_id> 3 </user_id>
+
+      <user_id> 2 </user_id>
+
+    </followers_list>
+
+  </USER>
+
+</USERS>
+
+
+USERS.dtd
+
+<!DOCTYPE USERS [
+
+<!ELEMENT USER (user_id, user_name, password, person_rank, follow_users_list, followers_list)>
+
+
+<!ELEMENT user_id (#PCDATA)>
+
+<!ELEMENT user_name (#PCDATA)>
+
+<!ELEMENT password (#PCDATA)>
+
+<!ELEMENT person_rank (#PCDATA)>
+
+<!ELEMENT follow_users_list (user_id)*>
+
+<!ELEMENT followers_list (user_id)*>
+
+]>
+
+
+
+
+XML schema:
+
+
+<?xml version="1.0"?>
+
+<USERS
+
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+
+xsi:noNamespaceSchemaLocation="USERS.xsd">
+
+
+<USERS>
+
+  <USER>
+
+    <user_id> 1 </user_id>
+
+    <user_name>Blake Offord</user_name>
+
+    <password>123456</password>
+
+    <person_rank>5</person_rank>
+
+    <follow_users_list>
+
+      <user_id> 2 </user_id>
+
+      <user_id> 10 </user_id>
+
+    </follow_users_list>
+
+    <followers_list>
+
+      <user_id> 3 </user_id>
+
+      <user_id> 2 </user_id>
+
+    </followers_list>
+
+  </USER>
+
+</USERS>
+
+
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name=”USERS”>
+
+  <xs:complexType>
+
+    <xs:sequence>
+
+      <xs:element name=”user” maxOccurs=”unbounded”>
+
+        <xs:complexType>
+
+          <xs:sequence>
+
+            <xs:element name="user_id" type="xs:integer"/>
+
+            <xs:element name="user_name" type="xs:string"/>
+
+            <xs:attribute name=”lang” type=”xs:string” use=”required”/>
+
+            <xs:element name="password" type="xs:string" default=”123456”/>
+
+            <xs:element name="person_rank" type="xs:int" default=”0”/>
+
+            <xs:element name=”follow_users_list”>
+
+              <xs:complexType>
+
+                <xs:element name=”user_id” type=”xs:integer” minOccurs=”0” maxOccurs=”unbounded”>
+
+              </xs:complexType>
+
+            </xs:element>
+
+            <xs:element name=”followers_list”>
+
+              <xs:complexType>
+
+                <xs:element name=”user_id” type=”xs:integer” minOccurs=”0” maxOccurs=”unbounded”>
+
+              </xs:complexType>
+
+            </xs:element>
+
+          </xs:sequence>
+
+        </xs:complexType>
+
+      </xs:element>
+
+    </xs:sequence>
+
+  </xs:complexType>
+
+</xs:element>
+
+</xs:schema>
+
+
