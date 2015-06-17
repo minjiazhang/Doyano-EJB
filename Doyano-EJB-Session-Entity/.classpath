@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="ejbModule"/>
+	<classpathentry kind="src" path="test"/>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/org.jboss.ide.eclipse.as.core.server.runtime.runtimeTarget/JBoss 7.1 Runtime">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.ejb"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
+	<classpathentry exported="true" kind="lib" path="test/lib/mockito-all-1.9.5.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="lib" path="/home/likewise-open/IES/zhang.1269/CSE5234/jboss-4.2.3.GA/client/jbossall-client.jar"/>
+	<classpathentry kind="lib" path="/home/likewise-open/IES/zhang.1269/Downloads/javaee-api-6.0-5.jar"/>
+	<classpathentry kind="lib" path="/home/likewise-open/IES/zhang.1269/Downloads/apache-log4j-1.2.17/log4j-1.2.17.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/OpenEJB"/>
+	<classpathentry kind="lib" path="/home/likewise-open/IES/zhang.1269/CSE5234/xmlbeans-branch/build/lib"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
