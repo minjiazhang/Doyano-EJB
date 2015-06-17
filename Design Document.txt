@@ -1,0 +1,267 @@
+
+Project Title - Doyano or Collabatron 
+by Team 15 - Blake Offord & Minjia Zhang
+
+
+This is a website to assist people in asking questions and getting answers via messages like a combination of stackoverflow and twitter. One person’s expertise, knowledge, and judgement can always be wanted to know by someone else. This website can help person to share their idea and to better connect each other.  Not only a user can ask questions or give answers, but he/she can also follow on: (1) other users (2) questions and (3) topics. Probably focused on Computer Engineering at first but will broaden to other categories and sciences
+
+
+Nouns & Verbs:
+
+
+Nouns: questions, answers, users, topics,system, ranking, person rank, operation, category, private messages, personal home page 
+
+-    combine people & users to users
+
+-    combine topics & categories to categories
+
+-    questions chaged to posts (postings)
+
+-    Answers are response to posts but their own entity
+
+
+Verbs: post, mark, follow, like, rate, thump up, thump down, promote, filter out, add, tag, send
+
+adjacent: less informative, invalid 
+
+    Assist would be to comment on a post
+
+    asking would be to create a new post
+
+    follow/make friends
+
+    add send personal message?
+
+
+Classes and attributes:
+
+Users
+
+ - username
+
+ - password
+
+ - userID
+
+ - email address
+
+
+Categories
+
+ - name
+
+ - catID
+
+
+Rank Table
+
+ - UserID
+
+ - CatID
+
+ - Rank value
+
+
+Posts
+
+ -  post(actually typed out post)
+
+ - postID
+
+ -userID
+
+
+Followers
+
+ - followers userID ( of person following)
+
+ - followie userID (of person being followed)
+
+
+Tag posts?
+
+ - postID
+
+ - userID
+
+
+Consolidate:
+
+remove operation -- too abstract
+
+system -- need an administrator?
+
+posts, topics and category -- a more organized system should have large categories. Then under each category, there are topics. One post or many posts can be grouped into a topic (shown in a user’s following list). For start, a post can be equal to a topic.
+
+thumbs up/thumbs down -- vote 
+
+promote/filter out -- the system’s operations.
+
+
+Use Cases:
+
+1. Users can post questions, or answers to other user’s questions
+
+2. Users can mark follow or like of other uses. As a result, a user can follow other users while at the same time can be followed by other users.
+
+3. Users can rate questions or topics, such as giving thumbs up and down. The system can automatically promote questions with higher ranking, and filter out those less informative or invalid answers. 
+
+4. Each person has a person rank, and every operation can affect a person’s rank, such as the thumb ups one received from others. Each person has his rank in every category starting at 0, the more thumbs up for posts adds to the users person rank in that category.
+
+5. Users can tag each other in posts or send private messages
+
+6. Each user can have their own personal homepage, including personal profile information, answers to other people’s questions, personal status, search box for specific questions and answers, follows to other person and topics.
+
+
+Entities and attributes:
+
+1. Users: user id (primary key), username, password, person rank, list of following user, list of followers (optional: personal page id)
+
+2. Answers: answer id, user id, answer text, relevance (thumb up/down)
+
+3. Posts: post id, a list of answers, timestamp, user_id, rating
+
+
+Optional:
+
+5. Personal page: Personal page id, profile pic, personal introduction, personal status, list of questions, list of answers
+
+6. Categories: list, catID, ranks
+
+
+
+Relationships:
+
+1. A user can have multiple posts (1:N)
+
+2. A post can have multiple answers (1:N)
+
+3. A user can follow multiple other users and the user can be followed by other users (M:N) 
+
+4. A user can have a rank in multiple categories (M:N), but each rank value is specific to one user (1:N)
+
+
+Loosely coupled component:
+
+Weekly/monthly email notification includes recommendations of high quality questions and answers, which can be chosen from a user’s subscribe list or general hot topics.
+
+
+NFRs:
+
+Scalability - at least 50 users can access at once
+
+website compatible on smartphones
+
+
+
+
+
+
+Class functionality: 
+
+
+class User {
+
+    int user_id;
+
+    String user_name;
+
+    String password;
+
+    int person rank;
+
+    User[] follow_users; //Should not contain duplicate
+
+    User[] followers;
+
+}
+
+
+class Answer {
+
+    int answer_id;
+
+    int user_id;
+
+    String answer;
+
+    int vote; //can be positives or negatives
+
+}
+
+
+class Post {
+
+    int post_id;
+
+    int user_id;
+
+    String question;
+
+    Answer[] answer_list;
+
+    Time: timestamp;
+
+    int: rating;
+
+}
+
+
+class Category {
+
+    int category_id;
+
+    String category_name;
+
+}
+
+
+class Rank {
+
+    int user_id;
+
+    int category_id;
+
+    int rank;
+
+}
+
+
+Responsibilities:
+
+post, mark, follow, thumb up, thumb down, add, getFollowers, getFollowees, getCategoryRank
+
+
+Allocate responsibilities to classes:
+
+Class User is allocated the responsibilities: post, follow, thumb up, thumb down, getFollowers, getFollowees, getCategoryRank
+
+Class Post has Display responsibilities
+
+Class Category has getAllPosts responsibilities 
+
+
+Collaborators:
+
+User: represents an administrator/regular user
+
+    -collaborators: Post, Answer, Rank
+
+Post: represents a post which contains at least one question and optional multiple answers.
+
+    -collaborators: User, Category, Answer
+
+Answer: represents one answer to a specific question/post
+
+    -collaborators: User, Post
+
+Category: represents a category under which multiple posts could exist
+
+    -collaborators: Post, Rank
+
+Rank: represent one user’s rank under a specific category
+
+    -collaborators: User, Category.
+
+
+
